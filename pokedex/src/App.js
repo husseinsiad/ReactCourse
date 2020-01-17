@@ -1,12 +1,16 @@
 import React from 'react';
-import Dog from './Dog'
 import logo from './logo.svg';
+// import Pokecard from './Pokecard'
+import Pokedex from './Pokedex'
 import './App.css';
 
 function App() {
+  //  const pokeMon=getPokeMon(data)
+    // console.log(getPokeMon(data))
   return (
+   
     <div className="App">
-      <Dog/>
+      <Pokedex  />
     </div>
   );
 }
