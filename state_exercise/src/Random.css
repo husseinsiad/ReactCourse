@@ -1,0 +1,7 @@
+.btnHide{
+    visibility: hidden;
+}
+
+.btnUnHide{
+    visibility: visible;
+}

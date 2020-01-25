@@ -1,15 +1,12 @@
 import React from 'react';
-import Pokecard from './Pokecard';
-// import Pokedex from './Pokedex'
 import logo from './logo.svg';
+import Random from './Random'
 import './App.css';
 
 function App() {
-  // console.log(Pokedex)
   return (
     <div className="App">
-     <Pokecard />
-      
+      <Random maxNum={10}/>
     </div>
   );
 }

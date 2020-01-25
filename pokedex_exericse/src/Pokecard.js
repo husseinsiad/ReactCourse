@@ -1,25 +1,23 @@
-import React,{Component} from 'react'
-import Pokedex from './Pokedex'
+import React,{Component} from 'react';
+//  import   './Pokecard.css'
+ 
+
+const POKE_API='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 class Pokecard extends Component{
-render(){
-    return(
-    <div className="container">
-        <div className="card" style={{width: "18rem"}}>
-        <div className="card-body">
-         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        </div>
-    </div>
-      
-    // <div className="card">
-    //      <img className="card-img-top" src="..." alt="Card image cap">
-    //     <div className="card-body">
-    //      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    //     </div>
-    // </div>
-    )
-}
-}
-
+     
+           render(){
+             
+               let imageUrl=`${POKE_API}${this.props.id}.png`;
+                return(
+                <div className="Pokecard">
+                <h4 className="Pokecard-title">{this.props.id}</h4>
+                <img src={imageUrl} alt={this.props.name} />
+                <div className="Pokecard-data">Type: {this.props.type}</div>
+                <div className="Pokecard-data">Exp: {this.props.exp}</div>
+                 
+                </div>
+            )
+       }  
+       
+    }
 export default Pokecard
-
