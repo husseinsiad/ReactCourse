@@ -28,8 +28,8 @@ class RollDice extends Component{
             <Die face={this.state.die1}/>
             <Die face={this.state.die2}/>
             </div >
-            <div className="RollDice"> <button  onClick={this.rollDice} className="btn btn-secondary RollDice">
-             {this.state.rolling?'Rolling...':'RollDice!'}
+            <div className="RollDice"> <button  onClick={this.rollDice}  className="btn btn-secondary RollDice" disabled={this.state.rolling}>
+             {this.state.rolling?'Rolling...':'RollDice!'}  
                 </button>
             </div>
             </div>
